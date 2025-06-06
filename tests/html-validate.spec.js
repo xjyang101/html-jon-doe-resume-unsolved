@@ -53,7 +53,7 @@ test.describe("HTML Structure Validation", () => {
       test("DOCTYPE declaration exists", async () => {
         if (!htmlContent) return;
 
-        const hasDoctype = htmlContent.startsWith("<!DOCTYPE");
+        const hasDoctype = htmlContent.toUpperCase().startsWith("<!DOCTYPE");
         expect(hasDoctype, "DOCTYPE declaration should exist").toBe(true);
         if (!hasDoctype) {
           test.info().annotations.push({

@@ -215,7 +215,7 @@ test("the table has 2 anchor elements that open the link in a new tab", async ({
   await expect(linksWithBlankTargets).toHaveCount(2);
 });
 
-test("has a an anchor element that has a valid email link text", async ({
+test("has a an anchor element that has a valid email content text ", async ({
   page,
 }) => {
   const emailRegex =
